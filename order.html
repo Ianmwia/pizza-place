@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luigi's Pizza Ordering Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="images/jpg" href="images/pizza.jpg">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div id="order">
+            <!-- <button type="submit" form="form1" value="Submit" id="cart">CART&nbsp; &nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></button> -->
+            <a href="index.html"><button type="submit" form="form1" value="Submit" id="btn2"> <i class="fa fa-home"
+                        aria-hidden="true"></i>&nbsp;Leave Page </button></a>
+            <h1>Luigi's Pizza Menu</h1>
+        </div>
+        <h3>MAKE ORDER</h3>
+        <div class="row" id="piz">
+
+            <div class="col-md-4">
+                <h4>CRUSTS</h4>
+                <img src="img/cheese-pizza.jpg" height="250px" width="250px">
+                <button type="submit" form="form1" value="Submit">ADD TO CART&nbsp; &nbsp; <i class="fa fa-shopping-bag"
+                        aria-hidden="true"></i>&nbsp; &nbsp;
+
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h4>TOPPINGS</h4>
+                <img src="img/pepperoni-pizza.jpg" height="250px" width="250px">
+                <button type="submit" form="form1" value="Submit" id="ok">ADD TO CART&nbsp; &nbsp; <i
+                        class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp; &nbsp;</button>
+            </div>
+            <div class="col-md-4">
+                <h4>SPECIAL OFFER PACKAGE</h4>
+                <img src="img/supreme-pizza.jpg" height="250px" width="250px">
+                <button type="submit" form="form1" value="Submit">ADD TO CART&nbsp; &nbsp; <i class="fa fa-shopping-bag"
+                        aria-hidden="true"></i>&nbsp; &nbsp;</button>
+            </div>
+            <div class="container">
+                <div id="form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <label for="size" style="color:orange">Size</label>
+                                <select class="browser-default custom-select" id="size">
+                                    <option value="">Choose option</option>
+                                    <option value="1500">Large = $ 18</option>
+                                    <option value="1000">Medium = $ 12</option>
+                                    <option value="500">Small= $ 7</option>
+                                </select><br>
+                            </div>
+                            <div class="col-md-3">
+
+                                <label for="crust" style="color:orange">Crust</label>
+                                <select class="browser-default custom-select" id="crust">
+                                    <option value="">Choose option</option>
+                                    <option value="150">Crispy = $ 3</option>
+                                    <option value="100">Stuffed= $ 2</option>
+                                    <option value="70">Gluten-free = $ 1</option>
+                                </select><br>
+                            </div>
+                            <div class="col-md-3">
+
+                                <label for="toppings" name="toppings" style="color:orange">Toppings</label>
+                                <select class="browser-default custom-select" id="toppings">
+                                    <option value="">Choose option</option>
+                                    <option value="1">Cheese = $ 1</option>
+                                    <option value="1">pepperoni = $ 1
+
+                                    <option value="1">onions = $ 1</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+
+                                <label for="quantity" style="color: orange">Quantity</label>
+                                <input class="form-control" type="text" name="pizza" id="quan" placeholder="0" max=""
+                                    min="0">
+                            </div><br><br><br><br><br><br>
+                            <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
+                                onclick="getTotalAmount();"><strong>Checkout</strong></button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+
+</html>
